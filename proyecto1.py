@@ -13,7 +13,12 @@ def prob_3(b,p):
 
 def prob_4(c,l):
 	h=len(c)
-	li=l-h
-	li=li//2
-	ld=l-li
-	return ("*"*li, c , )
+	li=l//2
+	d=("*"*li+ c +"*"*li )
+	return d
+
+def prob_5 (q,p):
+	r=(q[0]*p[0] + q[1]*p[1])
+	return r	
+
+
