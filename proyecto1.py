@@ -17,8 +17,30 @@ def prob_4(c,l):
 	d=("*"*li+ c +"*"*li )
 	return d
 
-def prob_5 (q,p):
-	r=(q[0]*p[0] + q[1]*p[1])
-	return r	
+def prob_5 (a,b):
+	r=(a[0]*b[0])+(a[1]*b[1])
+	return r
+
+def prob_6 (q):
+	q.sort()
+	q.reverse()
+	return q
+
+def prob_7():
+	m=[]
+	for i in range(1000):
+		if i%4==0 or i%7==0:
+			m.append(i)
+	return m
+	
+def prob_8(p):
+	p=p+1
+	h= p+1
+	for i in range (p):
+		num = i
+		h=h-1
+		tri= (" "*(h-1)+ " *" * num )			
+		return tri
+
 
 
